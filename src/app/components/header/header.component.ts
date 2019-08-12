@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  dropdownToggled = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClickDropdown() {
+    this.dropdownToggled = !this.dropdownToggled;
   }
 
 }

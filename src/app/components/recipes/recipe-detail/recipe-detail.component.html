@@ -1,1 +1,42 @@
-<p>recipe-detail works!</p>
+<div class="row">
+  <div class="col-sm-12">
+    <img src="" alt="" class="img-responsive">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Recipe Name</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <div class="dropdown">
+      <button type="button" class="btn btn-secondary dropdown-toggle" id="manageRecipeDropdown" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false" (click)="onClickDropdown()">
+        Manage Recipe <span class="caret"></span>
+      </button>
+
+      <div class="dropdown-menu" [ngClass]="{'show': dropdownToggled}" aria-labelledby="manageRecipeDropdown">
+        <a href="#" class="dropdown-item">To Shopping List</a>
+        <a href="#" class="dropdown-item">Edit Recipe</a>
+        <a href="#" class="dropdown-item">Delete recipe</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    Description
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    Ingredients
+  </div>
+</div>

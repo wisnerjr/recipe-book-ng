@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeDetailComponent implements OnInit {
 
+  dropdownToggled = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClickDropdown() {
+    this.dropdownToggled = !this.dropdownToggled;
   }
 
 }
